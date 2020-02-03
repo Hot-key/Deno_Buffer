@@ -144,12 +144,12 @@ test({
         assertEquals(appendData1, extractData1, "append UInt8");
 
         let appendData2: number = 240;
-        buffer.append_UInt8(appendData1);
+        buffer.append_UInt16(appendData1);
         let extractData2 = buffer.extract_UInt16();
         assertEquals(appendData2, extractData2, "append UInt16");
 
         let appendData3: number = 240;
-        buffer.append_UInt8(appendData1);
+        buffer.append_UInt32(appendData1);
         let extractData3 = buffer.extract_UInt32();
         assertEquals(appendData3, extractData3, "append UInt32");
 
